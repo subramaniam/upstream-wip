@@ -69,6 +69,11 @@
 			reg = <0x48200000 0x1000>;
 		};
 
+		mailbox: mailbox@48094000 {
+			compatible = "ti,omap3-mailbox";
+			ti,hwmods = "mailbox";
+		};
+
 		uart1: serial@4806a000 {
 			compatible = "ti,omap3-uart";
 			ti,hwmods = "uart1";

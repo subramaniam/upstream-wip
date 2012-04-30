@@ -46,6 +46,11 @@
 			#interrupt-cells = <1>;
 		};
 
+		mailbox: mailbox@48094000 {
+			compatible = "ti,omap2-mailbox";
+			ti,hwmods = "mailbox";
+		};
+
 		uart1: serial@4806a000 {
 			compatible = "ti,omap2-uart";
 			ti,hwmods = "uart1";
